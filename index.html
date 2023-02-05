@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css"
+      integrity="sha512-SbiR/eusphKoMVVXysTKG/7VseWii+Y3FdHrt0EpKgpToZeemhqHeZeLWLhJutz/2ut2Vw1uQEj2MbRF+TVBUA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <title>Random Quotes</title>
+  </head>
+  <body class="h-100">
+    <div
+      class="container text-center vh-100 align-items-center d-flex justify-content-center"
+    >
+      <div class="quote-box">
+        <h1 class="fw-bold">Quote of the Day</h1>
+        <h2 class="mt-4">Press the button below to receive a random quote!</h2>
+        <button
+          id="New-quote"
+          class="btn btn-outline-success w-30 py-2 px-5 mt-4 m-auto"
+          onclick="getNewQuote()"
+        >
+          New Quote
+        </button>
+        <div class="quote-content mt-4">
+          <p id="quote-phrase" class="h3 fw-medium"></p>
+          <span id="quote-owner" class="h4 mt-4"></span>
+        </div>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
